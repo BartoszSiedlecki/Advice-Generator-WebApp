@@ -1,0 +1,107 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    background: hsl(218, 23%, 16%);
+    display: grid;
+    place-items: center;
+    margin: 15rem auto;
+}
+
+container{
+    background: hsl(217, 19%, 24%);
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    padding: 25px 50px 0px 50px;
+    width: 34rem;
+}
+
+h1{
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: 0;
+    padding: 15px;
+}
+
+h1 span{
+    margin-left: 5px;
+}
+
+.advice{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: hsl(193, 38%, 86%);
+    text-align: center;
+}
+
+.line{
+    margin-top: 2.5rem;
+}
+
+.line .mobile{
+    display: none;
+}
+
+.roll{
+    height: 65px;
+    width: 65px;
+    border: none;
+    border-radius: 50%;
+    background: hsl(150, 100%, 66%);
+    transform: translateY(35px);
+    transition: ease-out 1s;
+}
+
+.roll img{
+    margin-top: 2px;
+}
+
+.roll:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
+}
+
+.active{
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 550px){
+
+    container{
+        width: 21rem;
+        border-radius: 10px;
+        padding: 1rem 1.5rem 0rem 1.5rem;
+    }
+
+    h1{
+        font-size: 10px;
+        letter-spacing: 3.5px;
+        margin-top: 0;
+    }
+
+    .advice{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .line{
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .line .desktop{
+        display: none;
+    }
+
+    .line .mobile{
+        display: block;
+    }
+}
